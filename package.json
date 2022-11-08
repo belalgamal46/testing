@@ -1,0 +1,22 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stringLength.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belalgamal46/testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belalgamal46/testing/issues"
+  },
+  "homepage": "https://github.com/belalgamal46/testing#readme",
+  "devDependencies": {
+    "jest": "^29.3.0"
+  }
+}
