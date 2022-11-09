@@ -44,7 +44,10 @@ npm install
 ```
 
 To use unit testing
-`npm test`
+
+```
+npm test
+```
 
 ## Authors
 
