@@ -14,6 +14,13 @@ class StringManager {
   reverseString = (string) => {
     return string.split('').reverse().join('');
   };
+
+  static capitalize = (string) => {
+    const capitalizeFirstLetter = string.split('', 1).join('').toUpperCase();
+    return string.split('').shift().join('');
+  };
 }
+
+// console.log(StringManager.capitalize('belal'));
 
 module.exports = StringManager;

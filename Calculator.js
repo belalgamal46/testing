@@ -10,12 +10,9 @@ class Calculator {
     return x - y;
   };
 
-  divide(x, y) {
-    if (x === 0 && y === 0) {
-      throw new Error('Invalid');
-    }
+  divide = (x, y) => {
     return x / y;
-  }
+  };
 
   multiply = (x, y) => {
     return x * y;
