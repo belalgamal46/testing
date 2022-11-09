@@ -8,19 +8,22 @@ class StringManager {
       const length = string.length;
       return length;
     }
-    throw new Error('Invalid string');
+    const error = new Error('Invalid string');
+    throw error;
   };
 
   reverseString = (string) => {
     return string.split('').reverse().join('');
   };
 
-  static capitalize = (string) => {
-    const capitalizeFirstLetter = string.split('', 1).join('').toUpperCase();
-    return string.split('').shift().join('');
+  capitalize = (string) => {
+    if (typeof string === 'number') {
+      throw new Error('please enter a string not a number');
+    }
+    const capitalizeFirstLetter = string.charAt(0).toUpperCase();
+    const newString = capitalizeFirstLetter + string.slice(1);
+    return newString;
   };
 }
-
-// console.log(StringManager.capitalize('belal'));
 
 module.exports = StringManager;
