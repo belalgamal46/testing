@@ -43,6 +43,9 @@ Download all the dependencies run:
 npm install
 ```
 
+To use unit testing
+`npm test`
+
 ## Authors
 
 👤 **Belal Gamal**
