@@ -1,20 +1,20 @@
 class Calculator {
-  add = (x, y) => {
+  static add = (x, y) => {
     return x + y;
   };
 
-  subtract = (x, y) => {
+  static subtract = (x, y) => {
     if (y > x) {
       return Math.abs(x - y);
     }
     return x - y;
   };
 
-  divide = (x, y) => {
+  static divide = (x, y) => {
     return x / y;
   };
 
-  multiply = (x, y) => {
+  static multiply = (x, y) => {
     return x * y;
   };
 }

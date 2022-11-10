@@ -1,8 +1,8 @@
 const StringManager = require('./StringManager');
+const stringManager = new StringManager();
 
-test('check if function return a length', () => {
+test('should return string reversed', () => {
   // Arrange
-  const stringManager = new StringManager();
   const string = 'belal';
 
   // Act
@@ -10,4 +10,15 @@ test('check if function return a length', () => {
 
   // Assert
   expect(result).toBe('laleb');
+});
+
+test('should throw if value is not string', () => {
+  // Arrange
+  const string = 1;
+
+  // Act
+  const result = () => stringManager.reverseString(string);
+
+  // Assert
+  expect(result).toThrow('Invalid type');
 });

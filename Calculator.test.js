@@ -1,12 +1,5 @@
 const Calculator = require('./Calculator');
 
-const divide = (x, y) => {
-  if (x === 0 || y === 0) {
-    throw new Error('Invalid');
-  }
-  return x / y;
-};
-
 // Arrange
 const calc = new Calculator();
 
@@ -32,7 +25,7 @@ const multiply = {
 describe('Calculator', () => {
   // Add Functionality
   describe('addition', () => {
-    expect(add.normalAdd).toBe(2);
+    expect(Calculator.add(1, 2)).toBe(2);
   });
 
   // Subtract Functionality

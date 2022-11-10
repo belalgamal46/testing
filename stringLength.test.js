@@ -6,10 +6,10 @@ test('check if function return a length', () => {
   const string = 'belal gamal';
 
   // Act
-  const result = stringManager.stringLength(string);
+  const result = () => stringManager.stringLength(string);
 
   // Assert
-  expect(result).toBe(11);
+  expect(result).toThrow('Invalid string');
 });
 
 test('check if length between 1 and 10', () => {

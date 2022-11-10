@@ -2,7 +2,7 @@ const StringManager = require('./StringManager');
 
 const stringManager = new StringManager();
 
-describe('', () => {
+describe('capitalize', () => {
   test('check if capitalized', () => {
     const string = 'belal';
 

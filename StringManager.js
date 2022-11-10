@@ -4,15 +4,14 @@ class StringManager {
       const length = string.length;
       return length;
     }
-    if (string.length > 10) {
-      const length = string.length;
-      return length;
-    }
-    const error = new Error('Invalid string');
-    throw error;
+
+    throw new Error('Invalid string');
   };
 
   reverseString = (string) => {
+    if (typeof string !== 'string') {
+      throw new Error('Invalid type');
+    }
     return string.split('').reverse().join('');
   };
 
